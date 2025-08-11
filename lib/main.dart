@@ -1,20 +1,10 @@
-import 'package:flutter/material.dart';
+import 'human.dart';
 
 void main() {
-  runApp(const MainApp());
+  var human = Human(
+    'Vantablack is so powerful that once its placed on a three-dimensional object it practically eliminates the third dimension tricking the human eye to think that its observing the two-dimensional object.',
+    'mao imo color Vantablack'
+  );
+  human.describe();
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
-}
